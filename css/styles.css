@@ -27,11 +27,21 @@
 
 /* Charte typographique
    ========================================================================== */
- 
+ @import url(polices/News_Cycle);
 
 /* Grille
    ========================================================================== */
- 
+ .nom-complet .rangee,
+ .telephone .rangee,
+ .date .rangee{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+ }
+.nom-complet .cols_6_de_12 {
+   width: 49%;
+}
 
 /* Mise en page
    ========================================================================== */
