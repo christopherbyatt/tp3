@@ -23,7 +23,7 @@
 
 /* Utilitaires
    ========================================================================== */
- 
+ @import url(_utilitaires.css);
 
 /* Charte typographique
    ========================================================================== */
@@ -31,18 +31,13 @@
 
 /* Grille
    ========================================================================== */
- .nom-complet .rangee,
- .telephone .rangee,
- .date .rangee{
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-wrap: wrap;
- }
-.nom-complet .cols_6_de_12 {
-   width: 49%;
-}
+@import url(_grille.css);
 
 /* Mise en page
    ========================================================================== */
- 
+ .boite {
+    width: 40%;
+ }
+footer {
+   text-align: center;
+}
