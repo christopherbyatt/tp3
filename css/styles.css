@@ -19,25 +19,28 @@
 
 /* Normalize
    ========================================================================== */
-@import url(_normalize.css);
+@import url(normalize.css);
 
 /* Utilitaires
    ========================================================================== */
- @import url(_utilitaires.css);
+ @import url(utilitaires.css);
 
 /* Charte typographique
    ========================================================================== */
- @import url(polices/News_Cycle);
-
+ /*@import url(polices/News_Cycle);*/
+@import url(typo.css);
 /* Grille
    ========================================================================== */
-@import url(_grille.css);
+@import url(grille.css);
 
 /* Mise en page
    ========================================================================== */
- .boite {
+.titre-principal{
+ width: 100%;
+}
+/*.boite {
     width: 40%;
- }
+ }*/
 footer {
    text-align: center;
 }

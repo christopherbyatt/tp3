@@ -8,12 +8,12 @@
     <meta name="author" content="Christopher Byatt">
     <title>TP3 - formulaire accessible</title>
     <link rel="icon" href="favicon.ico">
-    <link href="./css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="conteneur cols_4_de_12">
+    <div class="conteneur">
         <header id="header" role="banner">
             <picture>
                 <source srcset="images/bandeau_600.jpg" media="(max-width:600px)">
@@ -22,7 +22,7 @@
                     alt=" Concours ICI Première. Voyage de rêve. Au menu. Écoutez Gravel le Matin en semaine 5h30 au 95,1. Courez la chance de gagner un crédit voyage de 20 000$ ! Commandité par Ici Première, Montréal en Lumière, Bell et Voyages Traditours circuits et croisières.">
             </picture>
         </header>
-        <main id="rangees" role="main">
+        <main class="rangee" role="main">
             <h1 class="titre-principal">Concours</h1>
             <aside class="cols_4_de_12 boite" role="complementary">
                 <p>Complétez le coupon de participation et répondez à la question du jour ci- dessous.
@@ -218,6 +218,7 @@
                                 <span>- Attention, le numéro de téléphone ne doit pas comporter d’espace ou de trait
                                     d’union.</span>
                             </p>
+                        </div>
                     </fieldset>
                 </fieldset>
                 <fieldset>
@@ -306,46 +307,47 @@
                                         <span>Le palais du Luxembourg</span>
                                     </label>
                                 </li>
-                                <p class="erreur">
+                            </ul>
+                            <p class="erreur">
                                     <span>
                                         <span class="screen-reader-only">Avertissement</span>
                                         <span class="icone icone-avertissement" aria-hidden="true"></span>
                                     </span>
+                                    Veuillez répondre à la question du jour.
                                 </p>
-                                <p>- Veuillez répondre à la question du jour.</p>
                         </div>
-                        </ul>
                     </fieldset>
                 </fieldset>
-                <div class="reglement ctnValidation"></div>
+                <div class="reglement ctnValidation">
                 <p>
-                    <input type="checkbox" name="reglement" required>
+                    <input type="checkbox" name="reglement" id="reglement" required>
                     <label for="reglement">J'ai lu et j'accepte le <a
-                            href="pdf/Reglements-Voyage-De-Reve-Au-Menu.pdf">règlement du
-                            concours</a> et je confirme
-                        avoir atteint l’âge de majorité dans ma
-                        province de résidence.</a>
+                            href="pdf/Reglements-Voyage-De-Reve-Au-Menu.pdf">règlement du concours</a> et je confirme
+                        avoir atteint l’âge de majorité dans ma province de résidence.</a> </label>
                 </p>
     
     <p>- SVP, acceptez le règlement du concours.</p>
+                </div>
     <p>
-        <input type="checkbox" name="documentation">
+        <input type="checkbox" name="documentation" id="documentation">
         <label for="documentation">Oui, j’accepte de recevoir de la documentation de Radio- Canada.
         </label>
     </p>
     <p>
-        <button type="button">Enregistrer</button>
+<!--        attention! il faut garder le type par défaut qui est submit-->
+<!--        <button type="button">Enregistrer</button>-->
+                <button>Enregistrer</button>
     </p>
     </form>
-</div>
+<!--</div>-->
     </main>
-    <footer id="footer" role="credits">
+    </div>
+    <footer id="footer" role="contentinfo">
         <p id="credits_nom"><strong>© 2021, Christopher Byatt</strong><br>
             <small>Réalisé dans le cadre du cours Intégration II, Programme TIM, Cégep de
                 Sainte-Foy.</small>
         </p>
     </footer>
-    </div>
 </body>
 
 </html>
